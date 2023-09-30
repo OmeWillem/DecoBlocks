@@ -1,0 +1,4 @@
+name: DecoBlocks
+version: '${project.version}'
+main: eu.omewillem.decoblocks.DecoBlocks
+api-version: '1.20'
