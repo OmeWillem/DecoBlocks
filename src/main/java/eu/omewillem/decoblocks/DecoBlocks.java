@@ -2,9 +2,11 @@ package eu.omewillem.decoblocks;
 
 import co.aikar.commands.PaperCommandManager;
 import eu.omewillem.decoblocks.commands.DecoCommand;
-import eu.omewillem.decoblocks.listeners.block.*;
+import eu.omewillem.decoblocks.listeners.block.BreakListener;
 import eu.omewillem.decoblocks.listeners.block.placers.DecoyPlaceListener;
 import eu.omewillem.decoblocks.listeners.block.placers.PlaceListener;
+import eu.omewillem.decoblocks.managers.BlockManager;
+import eu.omewillem.decoblocks.managers.ConvertManager;
 import lombok.Getter;
 import org.bukkit.NamespacedKey;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -13,6 +15,8 @@ public final class DecoBlocks extends JavaPlugin {
 
     private static @Getter DecoBlocks instance;
     private @Getter PaperCommandManager commandManager;
+    private @Getter BlockManager blockManager;
+    private @Getter ConvertManager convertManager;
 
     // keys
     private @Getter NamespacedKey blockKey;
@@ -25,6 +29,9 @@ public final class DecoBlocks extends JavaPlugin {
 
         this.commandManager = new PaperCommandManager(this);
         commandManager.registerCommand(new DecoCommand());
+
+        this.blockManager = new BlockManager(this);
+        this.convertManager = new ConvertManager(this);
 
         getServer().getPluginManager().registerEvents(new PlaceListener(), this);
         getServer().getPluginManager().registerEvents(new DecoyPlaceListener(), this);

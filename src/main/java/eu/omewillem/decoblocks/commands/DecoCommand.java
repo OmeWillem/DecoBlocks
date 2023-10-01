@@ -3,7 +3,7 @@ package eu.omewillem.decoblocks.commands;
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.annotation.*;
 import eu.omewillem.decoblocks.DecoBlocks;
-import eu.omewillem.decoblocks.utils.ColourUtils;
+import eu.omewillem.decoblocks.utils.Utils;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.command.CommandSender;
@@ -22,67 +22,57 @@ public class DecoCommand extends BaseCommand {
     @HelpCommand
     @Default
     public void onDefault(CommandSender sender) {
-        sender.sendMessage(ColourUtils.parse("&2/" + "decoblocks" + " <subcommand> <arg>..."));
+        sender.sendMessage(Utils.parse("&2/" + "decoblocks" + " <subcommand> <arg>..."));
         getSubCommands().forEach((string, registeredCommand) -> {
             if (registeredCommand.getSyntaxText() == null || registeredCommand.getSyntaxText().isEmpty() || registeredCommand.getSyntaxText().equals(""))
                 return;
-            sender.sendMessage(ColourUtils.parse("&a/" + "decoblocks" + " " + registeredCommand.getSyntaxText()));
+            sender.sendMessage(Utils.parse("&a/" + "decoblocks" + " " + registeredCommand.getSyntaxText()));
         });
     }
 
     @Subcommand("convert")
     @CommandPermission("decoblocks.convert")
-    @CommandAlias("c|get")
-    @Syntax("convert <texture,mojang,nothing>")
-    public void onConvert(Player player) {
-        ItemStack item = player.getInventory().getItemInMainHand();
-        if (!item.getType().equals(Material.PLAYER_WALL_HEAD) && !item.getType().equals(Material.PLAYER_HEAD)) {
-            player.sendMessage("You must hold a player skull.");
-            return;
+    @Syntax("convert <mojang,nothing/skull_in_hand>")
+    public void onConvert(Player player, @Optional String url) {
+        if (url == null) {
+            ItemStack item = player.getInventory().getItemInMainHand();
+            if (!Utils.isPlayerHeadBlock(item.getType())) {
+                player.sendMessage("You must hold a player skull.");
+                return;
+            }
+
+            ItemStack convertedItem = DecoBlocks.getInstance().getConvertManager().convertSkull(item);
+            if (convertedItem == null) {
+                player.sendMessage("Something went wrong!");
+                return;
+            }
+
+            player.getInventory().setItemInMainHand(convertedItem);
+        } else {
+            ItemStack convertedItem = DecoBlocks.getInstance().getConvertManager().convertMojang(url);
+            if (convertedItem == null) {
+                player.sendMessage("Something went wrong!");
+            }
+
+            player.getInventory().addItem(convertedItem);
         }
 
-        ItemMeta meta = item.getItemMeta();
-        if (meta == null) return;
-
-        PersistentDataContainer persistentDataContainer = meta.getPersistentDataContainer();
-        NamespacedKey blockKey = DecoBlocks.getInstance().getBlockKey();
-
-        if (persistentDataContainer.has(blockKey, PersistentDataType.BOOLEAN)) {
-            player.sendMessage("This is already a Deco Block");
-            return;
-        }
-
-        persistentDataContainer.set(blockKey, PersistentDataType.BOOLEAN, true);
-        meta.setLore(List.of(ColourUtils.parse("&7This is a DecoBlocks block.")));
-
-        item.setItemMeta(meta);
-
-        player.sendMessage("Succesfully converted your skull into a deco block!");
+        player.sendMessage("Succesfully converted!");
     }
 
     @Subcommand("decoy")
     @CommandPermission("decoblocks.decoy")
-    @CommandAlias("fake")
     @Syntax("decoy")
     public void onDecoy(Player player) {
         ItemStack item = player.getInventory().getItemInMainHand();
+        ItemStack convertedItem = DecoBlocks.getInstance().getConvertManager().convertDecoy(item);
 
-        ItemMeta meta = item.getItemMeta();
-        if (meta == null) return;
-
-        PersistentDataContainer persistentDataContainer = meta.getPersistentDataContainer();
-        NamespacedKey decoyKey = DecoBlocks.getInstance().getDecoyKey();
-
-        if (persistentDataContainer.has(decoyKey, PersistentDataType.BOOLEAN)) {
-            player.sendMessage("This is already a Decoy Block");
+        if (convertedItem == null) {
+            player.sendMessage("Something went wrong!");
             return;
         }
 
-        persistentDataContainer.set(decoyKey, PersistentDataType.BOOLEAN, true);
-        meta.setLore(List.of(ColourUtils.parse("&2THIS IS A DECOY BLOCK USED WITH DECOBLOCKS!")));
-
-        item.setItemMeta(meta);
-
+        player.getInventory().setItemInMainHand(convertedItem);
         player.sendMessage("Succesfully converted your block into a decoy block!");
     }
 
