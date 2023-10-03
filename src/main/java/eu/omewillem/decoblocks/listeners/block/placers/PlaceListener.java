@@ -1,8 +1,8 @@
 package eu.omewillem.decoblocks.listeners.block.placers;
 
 import eu.omewillem.decoblocks.DecoBlocks;
-import eu.omewillem.decoblocks.utils.Utils;
-import org.bukkit.Location;
+import eu.omewillem.decoblocks.utils.general.BlockUtils;
+import eu.omewillem.decoblocks.utils.general.ItemUtils;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -15,10 +15,10 @@ public class PlaceListener implements Listener {
     @EventHandler
     public void onPlace(BlockPlaceEvent event) {
         Block block = event.getBlock();
-        if (!Utils.isPlayerHeadBlock(block.getType())) return;
+        if (!BlockUtils.isPlayerHeadBlock(block.getType())) return;
 
         ItemStack item = event.getItemInHand();
-        if (!Utils.isDecoItem(item)) return;
+        if (!ItemUtils.isDecoItem(item)) return;
 
         Player player = event.getPlayer();
         DecoBlocks.getInstance().getBlockManager().createBlock(block, item, player.getFacing());

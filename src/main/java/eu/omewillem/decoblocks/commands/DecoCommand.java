@@ -3,21 +3,25 @@ package eu.omewillem.decoblocks.commands;
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.annotation.*;
 import eu.omewillem.decoblocks.DecoBlocks;
-import eu.omewillem.decoblocks.utils.Utils;
-import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
+import eu.omewillem.decoblocks.gui.library.ChooseGUI;
+import eu.omewillem.decoblocks.utils.general.BlockUtils;
+import eu.omewillem.decoblocks.utils.general.Utils;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.persistence.PersistentDataContainer;
-import org.bukkit.persistence.PersistentDataType;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @CommandAlias("decoblocks|deco")
 @CommandPermission("decoblocks.command")
 public class DecoCommand extends BaseCommand {
+
+    private DecoBlocks instance;
+    public DecoCommand() {
+        instance = DecoBlocks.getInstance();
+    }
 
     @HelpCommand
     @Default
@@ -34,29 +38,40 @@ public class DecoCommand extends BaseCommand {
     @CommandPermission("decoblocks.convert")
     @Syntax("convert <mojang,nothing/skull_in_hand>")
     public void onConvert(Player player, @Optional String url) {
+        ItemStack convertedItem;
         if (url == null) {
             ItemStack item = player.getInventory().getItemInMainHand();
-            if (!Utils.isPlayerHeadBlock(item.getType())) {
+            if (!BlockUtils.isPlayerHeadBlock(item.getType())) {
                 player.sendMessage("You must hold a player skull.");
                 return;
             }
 
-            ItemStack convertedItem = DecoBlocks.getInstance().getConvertManager().convertSkull(item);
+            convertedItem = instance.getConvertManager().convertSkull(item);
             if (convertedItem == null) {
                 player.sendMessage("Something went wrong!");
                 return;
             }
 
+
             player.getInventory().setItemInMainHand(convertedItem);
         } else {
-            ItemStack convertedItem = DecoBlocks.getInstance().getConvertManager().convertMojang(url);
+            convertedItem = instance.getConvertManager().convertMojang(url);
             if (convertedItem == null) {
                 player.sendMessage("Something went wrong!");
+                return;
             }
 
             player.getInventory().addItem(convertedItem);
         }
 
+        convertedItem.setAmount(1);
+        if (instance.getHistoryMap().containsKey(player.getUniqueId())) {
+            instance.getHistoryMap().get(player.getUniqueId()).add(convertedItem);
+        } else {
+            ArrayList<ItemStack> stacks = new ArrayList<>();
+            stacks.add(convertedItem);
+            DecoBlocks.getInstance().getHistoryMap().put(player.getUniqueId(), stacks);
+        }
         player.sendMessage("Succesfully converted!");
     }
 
@@ -65,7 +80,7 @@ public class DecoCommand extends BaseCommand {
     @Syntax("decoy")
     public void onDecoy(Player player) {
         ItemStack item = player.getInventory().getItemInMainHand();
-        ItemStack convertedItem = DecoBlocks.getInstance().getConvertManager().convertDecoy(item);
+        ItemStack convertedItem = instance.getConvertManager().convertDecoy(item);
 
         if (convertedItem == null) {
             player.sendMessage("Something went wrong!");
@@ -74,6 +89,13 @@ public class DecoCommand extends BaseCommand {
 
         player.getInventory().setItemInMainHand(convertedItem);
         player.sendMessage("Succesfully converted your block into a decoy block!");
+    }
+
+    @Subcommand("library")
+    @CommandPermission("decoblocks.library")
+    @Syntax("library")
+    public void onLibrary(Player player) {
+        new ChooseGUI().open(player);
     }
 
 }

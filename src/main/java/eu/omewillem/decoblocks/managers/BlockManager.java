@@ -2,7 +2,7 @@ package eu.omewillem.decoblocks.managers;
 
 import com.jeff_media.customblockdata.CustomBlockData;
 import eu.omewillem.decoblocks.DecoBlocks;
-import eu.omewillem.decoblocks.utils.Utils;
+import eu.omewillem.decoblocks.utils.general.Utils;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;

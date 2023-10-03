@@ -1,0 +1,892 @@
+library:
+  gui:
+    letters: 2ac58b1a3b53b9481e317a1ea4fc5eed6bafca7a25e741a32e4e3c2841278c
+    furniture: da6ae5b34c4f79a5f9ed6ccc33bc981fc40acf2bfcd9522664fe1c524d2eb0
+    blocks: 8514d225b262d847c7e557b474327dcef758c2c5882e41ee6d8c5e9cd3bc914
+  letters:
+    character_a:
+      name: A
+      texture: 2ac58b1a3b53b9481e317a1ea4fc5eed6bafca7a25e741a32e4e3c2841278c
+    character_a_2:
+      name: A
+      texture: a67d813ae7ffe5be951a4f41f2aa619a5e3894e85ea5d4986f84949c63d7672e
+    character_b:
+      name: B
+      texture: d4c711571e7e214ee78dfe4ee0e1263b92516e418de8fc8f3257ae0901431
+    character_b_2:
+      name: B
+      texture: 8041f5e86983d36eaec4e167b2bbb5a3727607cde88f7555ca1b522a039bb
+    character_b_3:
+      name: B
+      texture: 50c1b584f13987b466139285b2f3f28df6787123d0b32283d8794e3374e23
+    character_c:
+      name: C
+      texture: d945996c8ae91e376196d4dc676fec31feac790a2f195b2981a703ca1d16cb6
+    character_c_2:
+      name: C
+      texture: abe983ec478024ec6fd046fcdfa4842676939551b47350447c77c13af18e6f
+    character_c_3:
+      name: C
+      texture: fff5aabead6feafaaecf4422cdd7837cbb36b03c9841dd1b1d2d3edb7825e851
+    character_d:
+      name: D
+      texture: 3193dc0d4c5e80ff9a8a05d2fcfe269539cb3927190bac19da2fce61d71
+    character_d_2:
+      name: D
+      texture: 1641150f481e8492f7128c948996254d2d91fc90f5a8ff4d8ac5c39a6a88a
+    character_d_3:
+      name: D
+      texture: 893e622b581975792f7c119ec6f40a4f16e552bb98776b0c7ae2bdfd4154fe7
+    character_e:
+      name: E
+      texture: db251487ff8eef2ebc7a57dab6e3d9f1db7fc926ddc66fea14afe3dff15a45
+    character_e_2:
+      name: E
+      texture: a157d65b19921c760ff4910b3404455b9c2ee36afc202d8538baefec676953
+    character_e_3:
+      name: E
+      texture: dbb2737ecbf910efe3b267db7d4b327f360abc732c77bd0e4eff1d510cdef
+    character_f:
+      name: F
+      texture: b183bab50a3224024886f25251d24b6db93d73c2432559ff49e459b4cd6a
+    character_f_2:
+      name: F
+      texture: c54cf261b2cd6ab54b0c624f8f6ff565a7b63e28e3b50c6dbfb52b5f0d7cf9f
+    character_f_3:
+      name: F
+      texture: 7e433656b443668ed03dac8c442722a2a41221be8bb48e23b35bd8c2e59f63
+    character_g:
+      name: G
+      texture: 995863b73637605feacbb173b77d5e155e65204c78d5c7911f738f28deb60
+    character_g_2:
+      name: G
+      texture: d3c9f8a74ca01ba8c54de1edc82e1fc07a83923e66574b6ffe606919240c6
+    character_g_3:
+      name: G
+      texture: 1ca3f324beeefb6a0e2c5b3c46abc91ca91c14eba419fa4768ac3023dbb4b2
+    character_h:
+      name: H
+      texture: 3c1d358d927074289cc26bff5b1240746f9f4f0cc46f942f5981c6595f72dd
+    character_h_2:
+      name: H
+      texture: 31f3462a473549f1469f897f84a8d4119bc71d4a5d852e85c26b588a5c0c72f
+    character_h_3:
+      name: H
+      texture: f8c58c509034617bf81ee0db9be0ba3e85ca15568163914c87669edb2fd7
+    character_i:
+      name: I
+      texture: 4246323c9fb319326ee2bf3f5b63ec3d99df76a12439bf0b4c3ab32d13fd9
+    character_i_2:
+      name: I
+      texture: 46178ad51fd52b19d0a3888710bd92068e933252aac6b13c76e7e6ea5d3226
+    character_i_3:
+      name: I
+      texture: 8f2295865bda4e47979d36b8a887a75a13b034e6988f78670b64a1e6442c
+    character_j:
+      name: J
+      texture: c58456cd9bb8a7e978591ae0cb26af1aadad4fa7a16725b295145e09bed8064
+    character_j_2:
+      name: J
+      texture: 3a79db9923867e69c1dbf17151e6f4ad92ce681bcedd3977eebbc44c206f49
+    character_j_3:
+      name: J
+      texture: e34462b55d7f5823680ad13f2adbd7d1ed46ba5101017ed4b37aeeeb775d
+    character_k:
+      name: K
+      texture: 773325a935c067b6ef227367f62ca4bf49f67adb9f6da32091e2d32c5dde328
+    character_k_2:
+      name: K
+      texture: af49fb708369e7bc2944ad706963fb6ac6ce6d4c67081ddadecfe5da51
+    character_k_3:
+      name: K
+      texture: 9461b38c8e45782ada59d16132a4222c193778e7d70c4542c9536376f37be42
+    character_l:
+      name: L
+      texture: 25a1e3328c571aa495d9c5f494815cca176c3acb184feb5a7b9c96ce8e52fce
+    character_l_2:
+      name: L
+      texture: 319f50b432d868ae358e16f62ec26f35437aeb9492bce1356c9aa6bb19a386
+    character_l_3:
+      name: L
+      texture: 8c84f75416e853a74f6c70fc7e1093d53961879955b433bd8c7c6d5a6df
+    character_m:
+      name: M
+      texture: d467bf6be95e5c8e9d01977a2f0c487ed5b0de5c87963a2eb15411c442fb2b
+    character_m_2:
+      name: M
+      texture: 31fde91b19b9309913724fea9e85311271c67bcb78578d461bf65d9613074
+    character_m_3:
+      name: M
+      texture: 49c45a24aaabf49e217c15483204848a73582aba7fae10ee2c57bdb76482f
+    character_n:
+      name: 'N'
+      texture: 35b8b3d8c77dfb8fbd2495c842eac94fffa6f593bf15a2574d854dff3928
+    character_n_2:
+      name: 'N'
+      texture: 823e434d6395fe7e63492431bdee5782bd5ee5bc8cab7559467bdd1f93b925a
+    character_n_3:
+      name: 'N'
+      texture: 1c7c972e6785d6b0aceb779abdd7702d98341c24c2a71e702930eca58055
+    character_o:
+      name: O
+      texture: d11de1cadb2ade61149e5ded1bd885edf0df6259255b33b587a96f983b2a1
+    character_o_2:
+      name: O
+      texture: 88445466bdc5ad5bcea82239c4e1b510f6ea5262d82d8a96d7291c342fb89
+    character_o_3:
+      name: O
+      texture: 8073bb44f9345f9bb31a679027e7939e461842a8c27486d7a6b842c39eb38c4e
+    character_p:
+      name: P
+      texture: a0a7989b5d6e621a121eedae6f476d35193c97c1a7cb8ecd43622a485dc2e912
+    character_p_2:
+      name: P
+      texture: 64b231a8d55870cfb5a9f4e65db06dd7f8e34282f1416f95878b19acc34ac95
+    character_p_3:
+      name: P
+      texture: f9de601dee3ffeca4d54595f844201d0ed2091acec4548c696bb16a8a158f6
+    character_q:
+      name: Q
+      texture: 43609f1faf81ed49c5894ac14c94ba52989fda4e1d2a52fd945a55ed719ed4
+    character_q_2:
+      name: Q
+      texture: ffedd6f9efdb156b86935699b2b4834df0f5d214513c01d38af3bd031cbcc92
+    character_q_3:
+      name: Q
+      texture: 66ca769bde25d4cc41e19e42adc35ab4c1557b76af232649acc9967ff198f13
+    character_r:
+      name: R
+      texture: a5ced9931ace23afc351371379bf05c635ad186943bc136474e4e5156c4c37
+    character_r_2:
+      name: R
+      texture: 67a188805162ca5dd4f4649c661d3f6d23c42662aef01645b1a97f78b3f13219
+    character_r_3:
+      name: R
+      texture: c03a1cd583cbbffde08f943e56ac3e3afafecaede834221a81e6db6c64667f7d
+    character_s:
+      name: S
+      texture: 3e41c60572c533e93ca421228929e54d6c856529459249c25c32ba33a1b1517
+    character_s_2:
+      name: S
+      texture: b6572e655725d78375a9817eb9ee8b37829ca1fea93b6095cc7aa19e5eac
+    character_s_3:
+      name: S
+      texture: 60d09dfd9f5de6243233e0e3325b6c3479335e7ccf13f2448d4e1f7fc4a0df
+    character_t:
+      name: T
+      texture: 64c75619b91d241f678350ad9237c134c5e08d87d6860741ede306a4ef91
+    character_t_2:
+      name: T
+      texture: 708c9ef3a3751e254e2af1ad8b5d668ccf5c6ec3ea2641877cba575807d39
+    character_t_3:
+      name: T
+      texture: 1562e8c1d66b21e459be9a24e5c027a34d269bdce4fbee2f7678d2d3ee4718
+    character_u:
+      name: U
+      texture: 607fbc339ff241ac3d6619bcb68253dfc3c98782baf3f1f4efdb954f9c26
+    character_u_2:
+      name: U
+      texture: 55a6e3ae5ae625923524838fac9fef5b42527f5027c9ca149e6c207792eb
+    character_u_3:
+      name: U
+      texture: e9f6d2c6d5285f882ae55d1e91b8f9efdfc9b377208bf4c83f88dd156415e
+    character_v:
+      name: V
+      texture: dce27a153635f835237d85c6bf74f5b1f2e638c48fee8c83038d0558d41da7
+    character_v_2:
+      name: V
+      texture: 975121f7d9c68da0e5b6a96ac615298b12b2ee5bd19989436ee647879da5b
+    character_v_3:
+      name: V
+      texture: cc9a138638fedb534d79928876baba261c7a64ba79c424dcbafcc9bac7010b8
+    character_w:
+      name: W
+      texture: aedcf4ffcb53b56d42baac9d0dfb118e343462327442dd9b29d49f50a7d38b
+    character_w_2:
+      name: W
+      texture: 67e165c3edc5541d4654c4728871e6908f613fc0ec46e823c96eac82ac62e62
+    character_x:
+      name: X
+      texture: 83618ff1217640bec5b525fa2a8e671c75d2a7d7cb2ddc31d79d9d895eab1
+    character_x_2:
+      name: X
+      texture: 5a6787ba32564e7c2f3a0ce64498ecbb23b89845e5a66b5cec7736f729ed37
+    character_x_3:
+      name: X
+      texture: 1919d1594bf809db7b44b3782bf90a69f449a87ce5d18cb40eb653fdec2722
+    character_y:
+      name: 'Y'
+      texture: d9c1d29a38bcf113b7e8c34e148a79f9fe41edf41aa8b1de873bb1d433b3861
+    character_y_2:
+      name: 'Y'
+      texture: e35424bb86305d7747604b13e924d74f1efe38906e4e458dd18dcc67b6ca48
+    character_y_3:
+      name: 'Y'
+      texture: c52fb388e33212a2478b5e15a96f27aca6c62ac719e1e5f87a1cf0de7b15e918
+    character_z:
+      name: Z
+      texture: b9295734195d2c7fa389b98757e9686ce6437c16c58bdf2b4cd538389b5912
+    character_z_2:
+      name: Z
+      texture: 4e91200df1cae51acc071f85c7f7f5b8449d39bb32f363b0aa51dbc85d133e
+    character_z_3:
+      name: Z
+      texture: 90582b9b5d97974b11461d63eced85f438a3eef5dc3279f9c47e1e38ea54ae8d
+    character_1:
+      name: '1'
+      texture: 71bc2bcfb2bd3759e6b1e86fc7a79585e1127dd357fc202893f9de241bc9e530
+    character_1_2:
+      name: '1'
+      texture: 31a9463fd3c433d5e1d9fec6d5d4b09a83a970b0b74dd546ce67a73348caab
+    character_2:
+      name: '2'
+      texture: acb419d984d8796373c9646233c7a02664bd2ce3a1d3476dd9b1c5463b14ebe
+    character_2_2:
+      name: '2'
+      texture: 4cd9eeee883468881d83848a46bf3012485c23f75753b8fbe8487341419847
+    character_3:
+      name: '3'
+      texture: 1d4eae13933860a6df5e8e955693b95a8c3b15c36b8b587532ac0996bc37e5
+    character_3_2:
+      name: '3'
+      texture: f8ebab57b7614bb22a117be43e848bcd14daecb50e8f5d0926e4864dff470
+    character_4:
+      name: '4'
+      texture: 62bfcfb489da867dce96e3c3c17a3db7c79cae8ac1f9a5a8c8ac95e4ba3
+    character_4_2:
+      name: '4'
+      texture: d2e78fb22424232dc27b81fbcb47fd24c1acf76098753f2d9c28598287db5
+    character_5:
+      name: '5'
+      texture: ef4ecf110b0acee4af1da343fb136f1f2c216857dfda6961defdbee7b9528
+    character_6:
+      name: '6'
+      texture: f331a6a6fcd6995b62088d353bfb68d9b89ae258325caf3f2886464f54a7329
+    character_6_2:
+      name: '6'
+      texture: 334b36de7d679b8bbc725499adaef24dc518f5ae23e716981e1dcc6b2720ab
+    character_7:
+      name: '7'
+      texture: 6db6eb25d1faabe30cf444dc633b5832475e38096b7e2402a3ec476dd7b9
+    character_8:
+      name: '8'
+      texture: c61a8a641437be9aea207253dd3f25440d954ea2b5866c552f386b29ac4d049
+    character_8_2:
+      name: '8'
+      texture: 59194973a3f17bda9978ed6273383997222774b454386c8319c04f1f4f74c2b5
+    character_9:
+      name: '9'
+      texture: e67caf7591b38e125a8017d58cfc6433bfaf84cd499d794f41d10bff2e5b840
+    character_9_2:
+      name: '9'
+      texture: a1928e1bfd86a9b79397c4cb4b65ef99af49b7d5f7957ad62c0c699a622cfbe
+    character_arrow_down:
+      name: Arrow Down
+      texture: 2dadd755d08537352bf7a93e3bb7dd4d733121d39f2fb67073cd471f561194dd
+    character_arrow_down_2:
+      name: Arrow Down
+      texture: 9b7ce683d0868aa4378aeb60caa5ea80596bcffdab6b5af2d12595837a84853
+    character_arrow_left:
+      name: Arrow Left
+      texture: bb0f6e8af46ac6faf88914191ab66f261d6726a7999c637cf2e4159fe1fc477
+    character_arrow_left_2:
+      name: Arrow Left
+      texture: 3ebf907494a935e955bfcadab81beafb90fb9be49c7026ba97d798d5f1a23
+    character_arrow_right:
+      name: Arrow Right
+      texture: 1b6f1a25b6bc199946472aedb370522584ff6f4e83221e5946bd2e41b5ca13b
+    character_arrow_right_2:
+      name: Arrow Right
+      texture: f2f3a2dfce0c3dab7ee10db385e5229f1a39534a8ba2646178e37c4fa93b
+    character_arrow_up:
+      name: Arrow Up
+      texture: d48b768c623432dfb259fb3c3978e98dec111f79dbd6cd88f21155374b70b3c
+    character_arrow_up_2:
+      name: Arrow Up
+      texture: 58fe251a40e4167d35d081c27869ac151af96b6bd16dd2834d5dc7235f47791d
+    character_dot:
+      name: Dot
+      texture: 6ff99ff279a2cf25deb4bd5b66c3576b824cc96c36781027af727ed3a4c1308e
+    character_dot_2:
+      name: Dot 2
+      texture: bd898c40e47c5d2d76924065360768065d624ee5b9ee0be9e12b98fb77c76
+    character_exclamation:
+      name: Exclamation
+      texture: 87d19aabfcfd99ffaba4214caef299516ce52e6d13bf2dda125985e481b72f9
+    character_exclamation_2:
+      name: Exclamation
+      texture: 6a53bdd1545531c9ebb9c6f895bc576012f61820e6f489885988a7e8709a3f48
+    character_question:
+      name: Question
+      texture: 5163dafac1d91a8c91db576caac784336791a6e18d8f7f62778fc47bf146b6
+    character_question_2:
+      name: Question
+      texture: 3aab272840d790c2ed2be5c860289f95d88e316b65c456ff6a35180d2e5bff6
+    character_slash:
+      name: Slash
+      texture: 2d593f0945cbb85a8e0be7d9a526010ee774810f2bc428cd4a23e4d232eff8
+    character_slash_2:
+      name: Slash
+      texture: 7f95d7c1bbf3afa285d8d96757bb5572259a3ae854f5389dc53207699d94fd8
+
+  furniture:
+    furniture_black_clock:
+      name: Black Clock
+      texture: ba10da526e5111cfb6e3ebd47693e162dd52d41a2182028daa7c2b19aa3143
+    furniture_blender:
+      name: Blender
+      texture: 98636123b1a3755abd8aef6d85b2a85bf10f486edefdd1a3cef7679d825
+    furniture_broken_tv:
+      name: Broken TV
+      texture: 2017bc48fe3cdc9085a0e110fe1f628426a09775747398de5724e73586bd
+    furniture_broken_tv_2:
+      name: Broken TV
+      texture: be3db27cbd1789310409081ad8c42d690b08961b55cadd45b42d46bca28b8
+    furniture_broken_tv_3:
+      name: Broken TV
+      texture: 45e9bd425fbd39a94c30bf5aeb301db186713322761fc82a76fb6168793490
+    furniture_broken_tv_4:
+      name: Broken TV
+      texture: a247c876488167c74cb948ab1181e6bef9e4c8d7573c191aaab4e5cc75b09d
+    furniture_broken_tv_5:
+      name: Broken TV
+      texture: cc99d8fbad11f9b73340bcc1adf6dd28f67f754b52ce4e502b4fe02b16b1834
+    furniture_c4_explosive:
+      name: C4 Explosive
+      texture: 8da332abde333a15a6c6fcfeca83f0159ea94b68e8f274bafc04892b6dbfc
+    furniture_camera:
+      name: Camera
+      texture: ea7d2a7fbb4d37b4d53fe87757128e5ef66ec23d7ff4fe9944546dbc8ce777
+    furniture_camera_2:
+      name: Camera
+      texture: 207bd38f16b380c882f8c28315ebed2561adab2fdb996b2cc0d747f64bc4eb8
+    furniture_ceiling_lamp:
+      name: Ceiling Lamp
+      texture: f0896390c4921bf889a29cfd1842abf9ef7f84e5a22fbce7e64891db41666bc
+    furniture_clock:
+      name: Clock
+      texture: da6ae5b34c4f79a5f9ed6ccc33bc981fc40acf2bfcd9522664fe1c524d2eb0
+    furniture_clock_2:
+      name: Clock
+      texture: 2de4e2783f85a391221dd91656ba688e7e42d16f6abbfbcfad9ca53617fca6
+    furniture_clock_3:
+      name: Clock
+      texture: bfe4ed837849dea840cd4f9929fdd1519d14b5dde3803559e7f63d27f1e6f29
+    furniture_computer:
+      name: Computer
+      texture: 9ccefd5f2a94f242819858a96555a13baeba9dae8d467f4061974ee999b6959b
+    furniture_computer_2:
+      name: Computer
+      texture: 9c9a91a74d3a1bb1d785f5bdc8d826de3b2fddc6a1fad12923fd06ec84f499e
+    furniture_computer_3:
+      name: Computer
+      texture: 186f72c16b1e9fe6e099e76b5f7a884fb782cfcc588c95c4e383dc527d1b84
+    furniture_computer_4:
+      name: Computer
+      texture: 8d19c68461666aacd7628e34a1e2ad39fe4f2bde32e231963ef3b35533
+    furniture_computer_5:
+      name: Computer
+      texture: fed4ae757f23445b5c9335cc5a8f7f7c6f9a5aee85bb69fe97f581dafb18d30
+    furniture_computer_6:
+      name: Computer
+      texture: 53da39e556c927990384faa1feb3b825252dac78cd288779cde1117c37a8
+    furniture_computer_7:
+      name: Computer
+      texture: 8ae52ae8c98ac19fd07637a469ffa256ab0b3b10ece6243186188ba38df154
+    furniture_gamecube:
+      name: Gamecube
+      texture: e063a0ebb2d8010273b6c45b64e84d83b1e43e2ca5dfb2a6fd838c3f88827d
+    furniture_gamecube_2:
+      name: Gamecube
+      texture: cc1e2b82db10ad25ca41345e9245f5847e76760cd245c48e5af1fd8985ef915
+    furniture_gamecube_3:
+      name: GameCube
+      texture: 1256f7ff52e7bfd8187b83dd34df34502952b8db9fafb7288ebebb6e78ef15f
+    furniture_golden_clock:
+      name: Golden Clock
+      texture: 6fe8cff75f7d433260af1ecb2f773b4bc381d951de4e2eb661423779a590e72b
+    furniture_headlight:
+      name: Headlight
+      texture: 59e9c9246f1ba5a41e53efa68b2bd56a70da308f393487dcf6fe756799b3c7
+    furniture_hot_toaster:
+      name: Hot Toaster
+      texture: 9ed6ff4d0f2fd91847a836e476acf8d4afbadf4d841e0cd48746f7347cf42
+    furniture_keypad:
+      name: Keypad
+      texture: b01a568eba7e453b55f15545f5e35ffab8791aacf9034afbbbe4bddb21fa50
+    furniture_lantern:
+      name: Lantern
+      texture: 7cc217a9b9e3ce3cd0484c7e8ce49d1cf741281bdda5a4d6cb821f378752718
+    furniture_lantern_off:
+      name: Lantern-off
+      texture: d2c81b435dc22d29d4778ffd22feb846a68b648dd1af5de818b517f0574d
+    furniture_microwave:
+      name: Microwave
+      texture: a76fa636c54e36085fe2fa46dc966215c15722bb764a2eee84cfe8476caf71
+    furniture_monitor:
+      name: Monitor
+      texture: 15c292a24f54a7a43785266552dba7a184f9c50e0d94b337d8d3e76e9e9cce7
+    furniture_monitor_2:
+      name: Monitor
+      texture: ed1e9979289f03099a7c587d52d488e26e7bb17ab594b69f92438d77eabc
+    furniture_monitor_3:
+      name: Monitor
+      texture: c74170c66bf3140f234b322add724c5df6949a9209f807ebf86d4f9c8c1e178
+    furniture_monitor_4:
+      name: Monitor
+      texture: 6d6c65b44c34b1acc2ccb346752397125f0d9ffa0ab3c50a99d1db3b74c63
+    furniture_old_camera:
+      name: Old Camera
+      texture: d3a0feb626e567e479576f4ff543e16e9b36a7304891b2f3293eaa8b68735a4
+    furniture_old_radio:
+      name: Old Radio
+      texture: 4c3c8517516f8d8e8067781e7c62eea27de478b14c4a68c8e8c1ad8af1bae21
+    furniture_police_siren:
+      name: Police Siren
+      texture: d4bf643cfb41ee5f9e618de9789cc6d85c2e953f44567e4e2d3b19a79e843
+    furniture_police_siren_2:
+      name: Police Siren
+      texture: ca35afa58631609791ffe25f3a879dfbffea1151f87bff62c5423ed6136ee0
+    furniture_security_camera:
+      name: Security Camera
+      texture: 2f159a1cbe173d927392fa65fcfe78553d81aa5dc29495b9fbbade362f8bf9
+    furniture_siren:
+      name: Siren
+      texture: a6b221be89678d5856eaa68667f98683175bcce6741f82c62e73f044166367
+    furniture_speaker:
+      name: Speaker
+      texture: ff7becf1718e9a6096ee5f9cb7abeb6cfd9488c44a3116407c92ec33ad7d8521
+    furniture_telephone:
+      name: Telephone
+      texture: 82442bbf7171b5cafca217c9ba44ce27647225df76cda9689d61a9f1c0a5f176
+    furniture_toaster:
+      name: Toaster
+      texture: bb53e8d374b4f6f573d1286681bf841055b89a462f7cdd99e8e63d2f514e45
+    furniture_toaster_2:
+      name: Toaster
+      texture: 543fe8802edb2e981ae6ed4dfaba3eab79aa8facf9abdc38126896debeb7c6b
+
+  blocks:
+    block_andesite:
+      name: Andesite
+      texture: b513543a77118f8201f49b7c8b632dcfd38037ebfc601a1bc91aedc4caba
+    block_beacon:
+      name: Beacon
+      texture: 9dbdaa755099edd7efa1f12882c7a51b5815db52e0b164aef6df9a1f53eca23
+    block_bedrock:
+      name: Bedrock
+      texture: 36d1fabdf3e342671bd9f95f687fe263f439ddc2f1c9ea8ff15b13f1e7e48b9
+    block_black_stained_clay:
+      name: Black Stained Clay
+      texture: e17ff8babb91b4dbad7524e58eed4b2f71565745989af9a2ccfcf3328f61bd2
+    block_black_stained_clay_2:
+      name: Black Stained Clay
+      texture: 54b932f117c87e11189f1c4c40cfd92be9119b1137cd610c68edd41ac58f14
+    block_black_wool:
+      name: Black Wool
+      texture: 3ab0263bdd76f3e418dba5bf481b921ced397d8b8a34a5561fb7beaa46ece1
+    block_blue_stained_clay:
+      name: Blue Stained Clay
+      texture: 7c116694731fbd272c1ffa4352a5359b6c3a4cb5864a74a5dbe0f665f8385c
+    block_blue_wool:
+      name: Blue Wool
+      texture: 3f3e406291174d24cdf0f953f8a174a82bb3489dce8f679a443ef1aae0169061
+    block_brick:
+      name: Brick
+      texture: 290d4fcb2ce03b94d920f0a9e7a54b32cfc7a1d33a6dfe9757d8678cbb591
+    block_brick_2:
+      name: Brick
+      texture: 5ec0ebea1821c292fdff45d359b3a9e2122717e83d55dc07fc3bb1ce32935e
+    block_brown_stained_clay:
+      name: Brown Stained Clay
+      texture: 9efa7b5e5e63d46d14615c61bed15427d90b261c7ca5e8159c466f09561da
+    block_brown_wool:
+      name: Brown Wool
+      texture: 32e36f6a654de74583d8030177ad6e3ac6755d7435d9123e8ebdff74b2d90cb
+    block_chest:
+      name: Chest
+      texture: 6f68d509b5d1669b971dd1d4df2e47e19bcb1b33bf1a7ff1dda29bfc6f9ebf
+    block_chimney:
+      name: Chimney
+      texture: 3058ec4d3920adbfa86550f5852422e1af55054a15afc9c2c922d58765faa5b
+    block_chiseled_quartz_block:
+      name: Chiseled Quartz Block
+      texture: 852cf1aef4b6adbc38f196dfba536db5a0b068f1ab91769ad8c6d2f74d3a5d4e
+    block_chiseled_sandstone:
+      name: Chiseled Sandstone
+      texture: 491e7f9033765cec968f272fc58b7344c434a1721f9537b25a6aff4c24576c5
+    block_clay:
+      name: Clay
+      texture: 67826829eab5ad62f0c11d9faafdc9954364871160dd839e1ab5a3b213a33
+    block_coal_block:
+      name: Coal Block
+      texture: f6c5ecac942c77b95ab4620df5b85e38064c974f9c5c576b843622806a4557
+    block_coal_ore:
+      name: Coal Ore
+      texture: 7788f5ddaf52c5842287b9427a74dac8f0919eb2fdb1b51365ab25eb392c47
+    block_coarse_dirt:
+      name: Coarse Dirt
+      texture: 2fa764b3c1d462f8124478ff543c7633fa19baf9913ee228513e81a3633d
+    block_cobblestone:
+      name: Cobblestone
+      texture: 195534e02c59b33ece5619280331979777e025fa5fa81ae75e99fd8efdebb8
+    block_cocoa_pod:
+      name: Cocoa Pod
+      texture: 5083ec2b01dc0fee79aa32188d9429acc68ecf71408dca04aaab53ad8bea0
+    block_command_block:
+      name: Command Block
+      texture: 8514d225b262d847c7e557b474327dcef758c2c5882e41ee6d8c5e9cd3bc914
+    block_cracked_stone_brick:
+      name: Cracked Stone Brick
+      texture: 39a46b2ab32f216e2d922c7237ba2319f91b71fa24fe451ad2ca81423ea3c8
+    block_cyan_stained_clay:
+      name: Cyan Stained Clay
+      texture: 4463811fd0c48fcd73abcb7bbe5aa5ec6bc2809ffc5577d3f4559df30765f
+    block_cyan_wool:
+      name: Cyan Wool
+      texture: 88efad74b254e57c799763dceee4511fa2f85ae9fa556eaa97d45bf67e0b6b3
+    block_dark_prismarine:
+      name: Dark Prismarine
+      texture: fd918598989549594446e83f33873891178da9db42f912e5272e1fb240312a
+    block_diamond_ore:
+      name: Diamond Ore
+      texture: f88cd6dd50359c7d5898c7c7e3e260bfcd3dcb1493a89b9e88e9cbecbfe45949
+    block_diorite:
+      name: Diorite
+      texture: 13fa5265a336abde301a9d59af4783e82a10dad0817716ead2962ab7c6d3dff
+    block_dirt:
+      name: Dirt
+      texture: 1ab43b8c3d34f125e5a3f8b92cd43dfd14c62402c33298461d4d4d7ce2d3aea
+    block_dispenser:
+      name: Dispenser
+      texture: e82e6aa950117384eb4bf55217283a78f57b8c85c089aad03bac5caa83c3020
+    block_dragon_ball_1:
+      name: Dragon Ball 1
+      texture: 49299dc02c35f1bc1a6895d7fc28de77ca890d0663cec5dcd6ea8460af1121
+    block_dragon_ball_2:
+      name: Dragon Ball 2
+      texture: 806ac82e3c7427bbcf15821e882d73aeb80eebcc6b455828328aeb70d71a
+    block_dragon_ball_3:
+      name: Dragon Ball 3
+      texture: 3999254a7ca8d8ba1faddcbab9da323749a1a0f65c89a016f682342768495
+    block_dragon_ball_4:
+      name: Dragon Ball 4
+      texture: 6a431a5ee3be79b8eb57ab95c8c96d7d751932d6dbd92727f6e372e7c5f
+    block_dragon_ball_5:
+      name: Dragon Ball 5
+      texture: 4b73257e9bc47bccbafaa54373ca11b875e5ac35c9d5973b581054cc9bba88
+    block_dragon_ball_6:
+      name: Dragon Ball 6
+      texture: b7fb6a5ada47056c8bf97566498f5ea4173339fa7819cbce97009e9050de
+    block_dragon_ball_7:
+      name: Dragon Ball 7
+      texture: 5c1a7e193f37c2c54e358f22a8a2d0289793dd3b2d6c799e8424b926a3951
+    block_dropper:
+      name: Dropper
+      texture: 25e9152efd892f60d7e0d7e53369e04779ed3111e2fb2752b6f4c26df540aedc
+    block_dropper_2:
+      name: Dropper
+      texture: 6326f0e739353d2d7c8e9ab4e91e1fbec607cad0fe10296afd21d633b9ecee
+    block_dry_farmland:
+      name: Dry Farmland
+      texture: 11530f790e972e0bcc63a54dc55532902568def8dedf2e22e759bbcbc55c0
+    block_emerald_block:
+      name: Emerald Block
+      texture: af121f7c1ab1567ff21983ff7a9e55c40c0b865f050d37e5d35defbaa
+    block_emerald_ore:
+      name: Emerald Ore
+      texture: 4fc495d1e6eb54a386068c6cb121c5875e031b7f61d7236d5f24b77db7da7f
+    block_enchantment_table:
+      name: Enchantment Table
+      texture: 1762a15b04692a2e4b3fb3663bd4b78434dce1732b8eb1c7a9f7c0fbf6f
+    block_end_stone:
+      name: End Stone
+      texture: 19f21f5d883316fd65a9366f32a33013182e3381dec21c17c78355d9bf4f0
+    block_ender_portal:
+      name: Ender Portal
+      texture: a4a319deafefd6adb37f21449ea56d3ea5a83857fb9616fa7d4f9ea625177
+    block_enderchest:
+      name: Enderchest
+      texture: a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067
+    block_endereye:
+      name: Endereye
+      texture: 872d341d77dbde6d53dad61bf192524dbdb96af1358e0748feea1481b1f8
+    block_enderpearl:
+      name: Enderpearl
+      texture: 4e35aade81292e6ff4cd33dc0ea6a1326d04597c0e529def4182b1d1548cfe1
+    block_glowstone:
+      name: Glowstone
+      texture: 65d7bed8df714cea063e457ba5e87931141de293dd1d9b9146b0f5ab383866
+    block_gold_block:
+      name: Gold Block
+      texture: 432c40a139a465e3ae4852f33253f35c3c5e0862bcad3bced2e6be753e4582
+    block_gold_ore:
+      name: Gold Ore
+      texture: e4df892293a9236f73f48f9efe979fe07dbd91f7b5d239e4acfd394f6eca
+    block_granite:
+      name: Granite
+      texture: a0285bea3c8a02db139fa8ec5cc588615a98550725f8e676c93fdbc33b6b
+    block_grass:
+      name: Grass
+      texture: 349c63bc508723328a19e597f40862d27ad5c1d545663ac24466582f568d9
+    block_gravel:
+      name: Gravel
+      texture: f32a1a50bbe431dc2ff71e8b26bb6dea155f72e2f469dda14f108c6083a7ecda
+    block_gray_wool:
+      name: Gray Wool
+      texture: e9e6917f2fb4ea08e7132df30961d2b5c523abba19ce43f835fc14c568f4
+    block_green_stained_clay:
+      name: Green Stained Clay
+      texture: b55d5019c8d55bcb9dc3494ccc3419757f89c3384cf3c9abec3f18831f35b0
+    block_green_wool:
+      name: Green Wool
+      texture: 484684344ae098529fc941aa84e195bdca3748d69acfee2bac1332135edd98c
+    block_half_piston:
+      name: Half Piston
+      texture: aa868ce917c09af8e4c350a5807041f6509bf2b89aca45e591fbbd7d4b117d
+    block_hardened_clay:
+      name: Hardened Clay
+      texture: 82d5fefe20daf31c238ee227dd141827ada5ef8482d8d357bbe5a7cf40af85
+    block_hay_bale:
+      name: Hay Bale
+      texture: 51ac5c4ef7501ab1eb9a2789ad6e65acdf6a27318d8de5356fe2475173a618f
+    block_hay_bale_2:
+      name: Hay Bale
+      texture: 4e3ca5b390d1e5f297283257ce90ac6f8783d786ecaee095b49cc6b944d72d
+    block_hydrated_farmland:
+      name: Hydrated Farmland
+      texture: 9a656926adcd507ff079ce42f5177435c28ef369359cf7ca6f9d825f5767db
+    block_ice_block:
+      name: Ice Block
+      texture: 872d9b98a6b34a2762aac1af915873c066c43c2b2b8d689d27626cc5afcb11
+    block_illusion_block:
+      name: Illusion Block
+      texture: cc2c59fcd92625ec4d578159a5fd5bd4247e382d4947284cf50f999c84116c0
+    block_illusion_block_2:
+      name: Illusion Block
+      texture: b462ddfa553ce78683be477b8d8654f3dfc3aa2969808478c987ab88c376a0
+    block_iron_block:
+      name: Iron Block
+      texture: bba8459145d83ffc44ad58c3260e74ca5a0f634c7eeb59a1ad3234849c933c
+    block_iron_ore:
+      name: Iron Ore
+      texture: db97bdf92b61926e39f5cddf12f8f7132929dee541771e0b592c8b82c9ad52d
+    block_jukebox:
+      name: Jukebox
+      texture: a620b82cf11e3c1371cc51eb9e312de72a6a62664494ed2cb7181b1bdfbc9278
+    block_jukebox_2:
+      name: Jukebox
+      texture: 6de4b53b78ec1c74d5b01f7f3b55832892b047fac155f534a74e717821c2ad
+    block_lapis_lazuli_block:
+      name: Lapis Lazuli Block
+      texture: 2d848dc6f694cbf35441722b1a27a195da56e4960231824fd7ec5b1315cc2a
+    block_lapis_lazuli_ore:
+      name: Lapis Lazuli Ore
+      texture: 2aa0d0fea1afaee334cab4d29d869652f5563c635253c0cbed797ed3cf57de0
+    block_lava:
+      name: Lava
+      texture: b6965e6a58684c277d18717cec959f2833a72dfa95661019dbcdf3dbf66b048
+    block_light_blue_wool:
+      name: Light Blue Wool
+      texture: f1af46febd45c0f4d81e8fa1b66b275d89e272b2ad55c978553a99c733e1ff
+    block_light_gray_stained_clay:
+      name: Light Gray Stained Clay
+      texture: 5cde99b72728ef881640fa5068d122e61dd9cf718dbb3709fc5b326f1af5d
+    block_light_gray_wool:
+      name: Light Gray Wool
+      texture: 998ba2b374cfc89454c1b8c32db458a270675439a495496c96771c989116162
+    block_lime_stained_clay:
+      name: Lime Stained Clay
+      texture: 55a117e161f7a291d0a3a168e77a21b09d39ffdf5773d22ac02f5fa6611db67
+    block_lime_wool:
+      name: Lime Wool
+      texture: d67470a0c18f6851e914353719e795877d29b3252f7e6bd4a1b865765bd74feb
+    block_magenta_stained_clay:
+      name: Magenta Stained Clay
+      texture: 3441528d288b2b79736cb2248878fb91efb4462d43bebd711f7326afbbf85
+    block_magenta_wool:
+      name: Magenta Wool
+      texture: abb4386bcda84e353c31d778d3b11bcd26fea494dd63496b8a82c7c78a4ad
+    block_mob_spawner:
+      name: Mob Spawner
+      texture: 647e2e5d55b6d04943519bed2557c6329e33b60b909dee8923cd88b115210
+    block_mossy_cobblestone:
+      name: Mossy Cobblestone
+      texture: 4d9238efc93493b14a582639eb0aa8834eaa48e10bd4c234eb1a4c363b43d5b
+    block_mossy_stone_brick:
+      name: Mossy Stone Brick
+      texture: 7237333339cbc6b469452c96211fa23e1951e8795076f9eed96a13824a879
+    block_mossy_stone_brick_2:
+      name: Mossy Stone Brick
+      texture: 6748ea7080afcdf07b1510fdce777665a76a6c6e2c166d39e1c345a6bb9c5f1e
+    block_mycellium:
+      name: Mycellium
+      texture: 7eb4c41f481e816cf4b507b0a17595f2ba1f24664dc432be347d4e7a4eb3
+    block_nether_portal:
+      name: Nether Portal
+      texture: b0bfc2577f6e26c6c6f7365c2c4076bccee653124989382ce93bca4fc9e39b
+    block_netherbrick:
+      name: Netherbrick
+      texture: c60b2f9145215a3a5065dca2d89bb8b4ca44b9222dd22060b51c38d9bf587
+    block_netherrack:
+      name: Netherrack
+      texture: 5ece8e8383563bcef5d5ae0b1bffed1d6158b9ab7c1ac8344c18ac48f6b6a2
+    block_note_block:
+      name: Note Block
+      texture: 4ceeb77d4d25724a9caf2c7cdf2d88399b1417c6b9ff5213659b653be4376e3
+    block_obsidian:
+      name: Obsidian
+      texture: 7840b87d52271d2a755dedc82877e0ed3df67dcc42ea479ec146176b02779a5
+    block_orange_stained_clay:
+      name: Orange Stained Clay
+      texture: 7316c16b1ac470d2c114434ff8730f1815709383db6f3cf720c39b6dce2116
+    block_orange_wool:
+      name: Orange Wool
+      texture: cbf7797a24a6af875f5c8271c5b8c425e19f372a415e0552fc247763f2859d1
+    block_packed_ice_block:
+      name: Packed Ice Block
+      texture: 56aab58fa01fce9af469ed747aed811d7ba18c476f5a7f9088e129c31b45f3
+    block_pillar_quartz_block:
+      name: Pillar Quartz Block
+      texture: 61fab0225e20e8458e8b75399713388d929856b551b0149081dbb0121e2a1664
+    block_pink_stained_clay:
+      name: Pink Stained Clay
+      texture: f75db81e1592f32d771dd5dbc6c3a51e7a0d66b22dfe296b96868505ceec
+    block_pink_wool:
+      name: Pink Wool
+      texture: 6becfb3879936b899e420bfcd3a74f8a1bf9dd54c58ec7fb9f81d9a5d988e
+    block_piston:
+      name: Piston
+      texture: 12743a8bea752d6daf672dea367e1a5d398aecbe0c3c8483a90ec9ac4412a41
+    block_podzol:
+      name: Podzol
+      texture: a4195f9a439c6d0ffd1961657f6f0aa8e3a2f8a2493afa662ab5e4193e0
+    block_polished_andesite:
+      name: Polished Andesite
+      texture: ca979f76633f5dda89496511716948e9d7b8592f6e1e480c5de1c83238d3e32
+    block_polished_diorite:
+      name: Polished Diorite
+      texture: 31a281f4945286c31fa077121f9b32c588fb94064de7f908cf0e9677cdda8b1
+    block_polished_granite:
+      name: Polished Granite
+      texture: 9ae4cf22f45bb77aefa5afa1f864dd3c5f9d3e92f43b3588fd162b2aa8c
+    block_prismarine:
+      name: Prismarine
+      texture: 97e56140686e476aef5520acbabc239535ff97e24b14d87f4982f13675c
+    block_prismarine_brick:
+      name: Prismarine Brick
+      texture: 37cba233ffc457b3305228b25f35c02335611c9efb76698b5e94c0d541b5f4
+    block_purple_stained_clay:
+      name: Purple Stained Clay
+      texture: e6f54f82836a55924ee85dec56bbbd8ca14633daa9bfe3565592edf39a6de
+    block_purple_wool:
+      name: Purple Wool
+      texture: ba94cb25de628ca359b2f6ea5a8868cbe26595eedb2bffb750967ad1ee1850
+    block_quartz_block:
+      name: Quartz Block
+      texture: e5e2b2ed298b53cc84783cd785ec57da49ceaabdcff31b25fe5256b3429b412
+    block_quartz_ore:
+      name: Quartz Ore
+      texture: 26de58d583c103c1cd34824380c8a477e898fde2eb9a74e71f1a985053b96
+    block_red_sand:
+      name: Red Sand
+      texture: 4ce41e6879dff0785d14cb7694ea6b0df192b96b8816013eb455e71552fce6a
+    block_red_sandstone:
+      name: Red Sandstone
+      texture: db31be197ac7d78b30c34dac2665dbf1a74f96a79e52cb8ed5088ad70ee9348
+    block_red_stained_clay:
+      name: Red Stained Clay
+      texture: 9e42f682e430b55b61204a6f8b76d5227d278ed9ec4d98bda4a7a4830a4b6
+    block_red_wool:
+      name: Red Wool
+      texture: 86d35a963d5987894b6bc214e328b39cd2382426ff9c8e082b0b6a6e044d3a3
+    block_redstone_block:
+      name: Redstone Block
+      texture: d08ee6edfa98db5eae9b9c9936e94489b2d4bbbd3d2b4b6b4885a32240613c
+    block_redstone_lamp:
+      name: Redstone Lamp
+      texture: 1aff93ebecc1f8fbd13ba7839ec7bdcdecab7c07fd8ba78ee78ad0bd3accbe
+    block_redstone_lamp_off_:
+      name: Redstone Lamp (Off)
+      texture: bd58d459165d5978753eab5f44bd609f3db84ee3bb016932052389d38b895
+    block_redstone_ore:
+      name: Redstone Ore
+      texture: e8deee5866ab199eda1bdd7707bdb9edd693444f1e3bd336bd2c767151cf2
+    block_redstone_torch:
+      name: Redstone Torch
+      texture: c2b0a2709ad27c5783ba7acbdae8787d17673f0888f1b6d4e24ee13298d4
+    block_sand:
+      name: Sand
+      texture: d7d7d72e78f35decd2b08ea9b74790e5cd7e26484cf2449bdeca4f78ba3
+    block_sandstone:
+      name: Sandstone
+      texture: cf38117c157f2cce27f566fb6242ddcc34dabc39cdd1d54e66128a4ec8a3ca4c
+    block_sea_lantern:
+      name: Sea Lantern
+      texture: 824c6ff1714eb2c3b844d46d2e5ea2f26d273a33eaaa744abf645b060b47d7
+    block_slime_ball:
+      name: Slime Ball
+      texture: 4934a9f5ab1789a7d8dd96d32493cdacff577d8c81e7b23917dff2e32bd0bc10
+    block_slime_block:
+      name: Slime Block
+      texture: 90e65e6e5113a5187dad46dfad3d3bf85e8ef807f82aac228a59c4a95d6f6a
+    block_slime_piston:
+      name: Slime Piston
+      texture: b711315e3701d66c53154aac995d64ff7f80be8e11d2712d9298dbabd71d6
+    block_smooth_red_sandstone:
+      name: Smooth Red Sandstone
+      texture: a2da7aa1ae6cc9d6c36c18a460d2398162edc2207fdfc9e28a7bf84d7441b8a2
+    block_smooth_sandstone:
+      name: Smooth Sandstone
+      texture: d36e9862832a6fcc4855fa79c1aae5e73b9197ec6bbd38f6312efac680c63285
+    block_snow_block:
+      name: Snow Block
+      texture: 5dd6fe267a418dcc7f37a8f76855b5328b1303897b342a107cf162f14fe3d
+    block_snow_grass:
+      name: Snow Grass
+      texture: 43c52eae747cad5b4fd19b1a23b39a336b62ed422797a622d045f43e5d38
+    block_soulsand:
+      name: Soulsand
+      texture: 1ea6f932b45fdf3b693d9e44bd05bca364eb5b9aff497226fdb52abb2436422
+    block_sponge:
+      name: Sponge
+      texture: 9613fdab43d76838b7b8c19244163f1765db874bdf151696bdcb654eb2e52
+    block_sticky_piston:
+      name: Sticky Piston
+      texture: 7ca4d218df9d32cd47d9c1d294877122be5919b418a6cc3d089162b133f2db
+    block_stone:
+      name: Stone
+      texture: de9b8aae7f9cc76d625ccb8abc686f30d38f9e6c42533098b9ad577f91c333c
+    block_stone_brick:
+      name: Stone Brick
+      texture: 6a3bb93b9933689bc5088dec730bbe859d826b6dad5ffd773c2d2b8f847f5f
+    block_stone_brick_2:
+      name: Stone Brick
+      texture: c7a2c18ffa4d3f4216b2414179ecd88ae79e6b1e0e89c7bf25dd35994f7b96
+    block_stone_slab:
+      name: Stone Slab
+      texture: 8dd0cd158c2bb6618650e3954b2d29237f5b4c0ddc7d258e17380ab6979f071
+    block_tnt:
+      name: TNT
+      texture: 728a1815689d7194cf7db061b59f63106264b51387976a7fb74ab79b5641
+    block_tnt_2:
+      name: TNT
+      texture: eb994b41f07f87b328186acfcbdabc699d5b1847fabb2e49d5abc27865143a4e
+    block_water:
+      name: Water
+      texture: 5c7ecbfd6d33e873a1cf9a92f57f146152b52d9d7311694602671111a302f
+    block_wet_sponge:
+      name: Wet Sponge
+      texture: c28bdd34810f866527daaf283da71826a8378286b2a43a626615fa1b3639e
+    block_white_stained_clay:
+      name: White Stained Clay
+      texture: 7159594388bf013a4e3e6869faabcb95d31dd3f4a258a535e7cbd92c9986b7
+    block_white_wool:
+      name: White Wool
+      texture: 3faf4c29f1e7405f4680c5c2b03ef9384f1aecfe2986ad50138c605fefff2f15
+    block_wood_plank:
+      name: Wood Plank
+      texture: a0e9d2beb84b32e3f15e380cc2c5510642911a512105fa2ec679bc540fd8184
+    block_yellow_wool:
+      name: Yellow Wool
+      texture: 27bbd0b2911c96b5d87b2df76691a51b8b12c6fefd523146d8ac5ef1b8ee

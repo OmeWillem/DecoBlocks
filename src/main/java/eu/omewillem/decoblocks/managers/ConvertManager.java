@@ -1,7 +1,7 @@
 package eu.omewillem.decoblocks.managers;
 
 import eu.omewillem.decoblocks.DecoBlocks;
-import eu.omewillem.decoblocks.utils.Utils;
+import eu.omewillem.decoblocks.utils.general.Utils;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;

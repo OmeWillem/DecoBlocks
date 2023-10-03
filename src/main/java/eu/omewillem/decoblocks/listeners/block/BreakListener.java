@@ -1,7 +1,7 @@
 package eu.omewillem.decoblocks.listeners.block;
 
 import eu.omewillem.decoblocks.DecoBlocks;
-import eu.omewillem.decoblocks.utils.Utils;
+import eu.omewillem.decoblocks.utils.general.BlockUtils;
 import org.bukkit.Effect;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -16,10 +16,12 @@ public class BreakListener implements Listener {
         if (!event.getBlock().getType().equals(Material.BARRIER)) return;
 
         Block block = event.getBlock();
-        if (!Utils.hasUUID(block)) return;
+        if (!BlockUtils.hasUUID(block)) return;
 
-        Entity entity = DecoBlocks.getInstance().getServer().getEntity(Utils.getUUID(block));
+        Entity entity = DecoBlocks.getInstance().getServer().getEntity(BlockUtils.getUUID(block));
         entity.remove();
+
+        BlockUtils.removeData(block);
 
         block.getWorld().playEffect(block.getLocation(), Effect.STEP_SOUND, Material.PLAYER_HEAD);
     }
