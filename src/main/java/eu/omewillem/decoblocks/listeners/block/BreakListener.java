@@ -1,5 +1,6 @@
 package eu.omewillem.decoblocks.listeners.block;
 
+import com.jeff_media.customblockdata.events.CustomBlockDataRemoveEvent;
 import eu.omewillem.decoblocks.DecoBlocks;
 import eu.omewillem.decoblocks.utils.general.BlockUtils;
 import org.bukkit.Effect;
@@ -12,7 +13,7 @@ import org.bukkit.event.block.BlockBreakEvent;
 
 public class BreakListener implements Listener {
     @EventHandler
-    public void onBreak(BlockBreakEvent event) {
+    public void onBreak(CustomBlockDataRemoveEvent event) {
         if (!event.getBlock().getType().equals(Material.BARRIER)) return;
 
         Block block = event.getBlock();

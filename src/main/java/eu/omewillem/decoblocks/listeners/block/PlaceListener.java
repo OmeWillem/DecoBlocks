@@ -1,4 +1,4 @@
-package eu.omewillem.decoblocks.listeners.block.placers;
+package eu.omewillem.decoblocks.listeners.block;
 
 import eu.omewillem.decoblocks.DecoBlocks;
 import eu.omewillem.decoblocks.utils.general.BlockUtils;

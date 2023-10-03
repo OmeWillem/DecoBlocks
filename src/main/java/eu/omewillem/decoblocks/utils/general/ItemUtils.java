@@ -12,9 +12,4 @@ public class ItemUtils {
         ItemMeta meta = item.getItemMeta();
         return meta != null && meta.getPersistentDataContainer().has(DecoBlocks.getInstance().getBlockKey(), PersistentDataType.BOOLEAN);
     }
-
-    public boolean isDecoyItem(ItemStack item) {
-        ItemMeta meta = item.getItemMeta();
-        return meta != null && meta.getPersistentDataContainer().has(DecoBlocks.getInstance().getDecoyKey(), PersistentDataType.BOOLEAN);
-    }
 }

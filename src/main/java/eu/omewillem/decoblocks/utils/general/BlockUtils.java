@@ -20,11 +20,6 @@ public class BlockUtils {
         return type == Material.PLAYER_HEAD || type == Material.PLAYER_WALL_HEAD;
     }
 
-    public boolean isDecoBlock(Block block) {
-        PersistentDataContainer dataContainer = getCustomBlockData(block);
-        return dataContainer.has(DecoBlocks.getInstance().getBlockKey(), PersistentDataType.BOOLEAN);
-    }
-
     public boolean hasUUID(Block block) {
         PersistentDataContainer dataContainer = getCustomBlockData(block);
         return dataContainer.has(DecoBlocks.getInstance().getUuidKey(), PersistentDataType.STRING);
@@ -39,7 +34,6 @@ public class BlockUtils {
     public void removeData(Block block) {
         PersistentDataContainer dataContainer = getCustomBlockData(block);
         dataContainer.remove(DecoBlocks.getInstance().getUuidKey());
-        dataContainer.remove(DecoBlocks.getInstance().getDecoyKey());
         dataContainer.remove(DecoBlocks.getInstance().getBlockKey());
     }
 }

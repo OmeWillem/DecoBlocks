@@ -75,22 +75,6 @@ public class DecoCommand extends BaseCommand {
         player.sendMessage("Succesfully converted!");
     }
 
-    @Subcommand("decoy")
-    @CommandPermission("decoblocks.decoy")
-    @Syntax("decoy")
-    public void onDecoy(Player player) {
-        ItemStack item = player.getInventory().getItemInMainHand();
-        ItemStack convertedItem = instance.getConvertManager().convertDecoy(item);
-
-        if (convertedItem == null) {
-            player.sendMessage("Something went wrong!");
-            return;
-        }
-
-        player.getInventory().setItemInMainHand(convertedItem);
-        player.sendMessage("Succesfully converted your block into a decoy block!");
-    }
-
     @Subcommand("library")
     @CommandPermission("decoblocks.library")
     @Syntax("library")

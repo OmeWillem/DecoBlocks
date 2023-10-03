@@ -55,20 +55,6 @@ public class ConvertManager {
         return head;
     }
 
-    public ItemStack convertDecoy(ItemStack item) {
-        ItemMeta meta = item.getItemMeta();
-        if (meta == null) return null;
-
-        PersistentDataContainer persistentDataContainer = meta.getPersistentDataContainer();
-        NamespacedKey decoyKey = DecoBlocks.getInstance().getDecoyKey();
-
-        persistentDataContainer.set(decoyKey, PersistentDataType.BOOLEAN, true);
-        meta.setLore(List.of(Utils.parse("&2THIS IS A DECOY BLOCK USED WITH DECOBLOCKS!")));
-
-        item.setItemMeta(meta);
-        return item;
-    }
-
     private void setBlockData(ItemMeta meta) {
         PersistentDataContainer persistentDataContainer = meta.getPersistentDataContainer();
         NamespacedKey blockKey = DecoBlocks.getInstance().getBlockKey();

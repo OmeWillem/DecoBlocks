@@ -30,30 +30,17 @@ public class BlockManager {
         setBlock(blockDataContainer);
     }
 
-    public void createDecoy(Block block) {
-        BlockDisplay display = spawnDecoy(block);
-        PersistentDataContainer blockDataContainer = getCustomBlockData(block);
-
-        setUUID(blockDataContainer, display);
-        setDecoy(blockDataContainer);
-    }
-
     private ItemDisplay spawnBlock(Block block, ItemStack item, BlockFace face) {
-        Location location = block.getLocation().clone().add(0.5, 1, 0.5);
+        Location location = block.getLocation();
         ItemDisplay display = (ItemDisplay) block.getWorld().spawnEntity(location, EntityType.ITEM_DISPLAY);
 
         Transformation transformation = display.getTransformation();
         transformation.getScale().set(2, 2, 2);
-        transformation.getRightRotation().setAngleAxis(Utils.getAngle(face), 0, 1, 0);
+        transformation.getTranslation().add(0.5F, 1, 0.5F);
+        transformation.getLeftRotation().setAngleAxis(Utils.getAngle(face), 0, 1, 0);
 
         display.setTransformation(transformation);
         display.setItemStack(item);
-        return display;
-    }
-
-    private BlockDisplay spawnDecoy(Block block) {
-        BlockDisplay display = (BlockDisplay) block.getWorld().spawnEntity(block.getLocation(), EntityType.BLOCK_DISPLAY);
-        display.setBlock(block.getBlockData());
         return display;
     }
 
@@ -67,9 +54,5 @@ public class BlockManager {
 
     private void setBlock(PersistentDataContainer dataContainer) {
         dataContainer.set(decoBlocks.getBlockKey(), PersistentDataType.BOOLEAN, true);
-    }
-
-    private void setDecoy(PersistentDataContainer dataContainer) {
-        dataContainer.set(decoBlocks.getDecoyKey(), PersistentDataType.BOOLEAN, true);
     }
 }
